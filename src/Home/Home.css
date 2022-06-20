@@ -1,0 +1,147 @@
+body{
+  overflow-x: hidden;/* Not good */
+}
+/* Apresentation */
+.apresentation{
+  margin: 1%;
+}
+.apresentation.text{
+  width: 43%;
+  margin: 0 9%;
+}
+.apresentation.image{
+  margin-right: 10%;
+  width: 28%;
+  position: relative;
+}
+.apresentation.image #notebook{
+  position: relative;
+  animation: floating 10s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite; 
+}
+.apresentation.text div.dev{
+  display: inline;
+  white-space: pre-wrap;
+}
+.apresentation.text h1{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: -0.07em;
+}
+.apresentation.text h1 .dev{
+  font-family: 'Inika', serif;
+  font-weight: 500;
+  position: relative;
+}
+.apresentation.text h1 .dev:first-child::before{
+  content: '';
+  width: 120px;
+  transform: rotate(-15deg);
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  animation: increaseWidth 1s;
+}
+.apresentation.text p{
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.07em;
+  color: #939393;
+}
+.apresentation.image img{
+  width: 430px;
+}
+.eff-rectangle::before{
+  content: '';
+  position: absolute;
+  width: 264px;
+  height: 34px;
+  left: 620px;
+  bottom: 12%;
+  background: #E7E7E7;
+}
+.eff-rectangle::after{
+  content: '';
+  position: absolute;
+  width: 293px;
+  height: 34px;
+  left: 525px;  
+  bottom: 10%;
+  
+  background: #F4F4F4;
+}
+.apresentation.image #mancha{
+  position:absolute;
+  height: 135%;
+  width: auto;
+  top:0;
+  right: auto;
+  left: 0;
+  margin-top:auto;
+  margin-right:auto;
+  opacity: 0.05;
+  z-index: -1;
+}
+.icons{
+  position: absolute;
+  bottom: 10.5%;
+  left: 10%;
+  width: 30%;
+  justify-content: space-between;
+  color: gray;
+  max-width: 200px;
+  transition: bottom 1s;
+}
+.icons svg{
+  font-size: 2em;
+}
+/* Screensize */
+@media only screen and (max-width: 1000px) {
+  .apresentation.image {
+    display: none;
+  }
+  .apresentation.text .dev{
+    display: block;
+  }
+  .apresentation.text{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .icons{
+    bottom: 5%;
+  }
+  .btn{
+    padding: 0;
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+/* Animations */
+@keyframes increaseWidth{
+  0%{
+    width: 0;
+    transform: rotate(0deg);
+    top: 37px
+  }
+  100%{
+    top: 0;
+    width: 120px;
+    transform: translate(-15deg);
+  }
+}
+@keyframes floating{
+  0%{
+    top: -20px;
+  }
+  50%{
+    top: 20px;
+  }
+  100%{
+    top: -20px;
+  }
+}
