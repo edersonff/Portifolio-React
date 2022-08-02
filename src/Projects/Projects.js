@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
 import ProjectMenu from '../Components/ProjectMenu';
+import projectsList from '../data/projectsList';
 import './Projects.css';
 
 function Projects() {
@@ -17,10 +17,11 @@ function Projects() {
             <div className="filter">Todos</div>
           </div>
           <div className="projects_menu">
-            <ProjectMenu/>
-            <ProjectMenu/>
-            <ProjectMenu/>
-            <ProjectMenu/>
+            {projectsList.map((project)=>{
+              return (
+                <ProjectMenu title={project.title}/>
+              )
+            })}
           </div>
         </div>
     </div>

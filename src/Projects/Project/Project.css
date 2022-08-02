@@ -1,7 +1,8 @@
 /* full_page */
 .project,
 .half-page,
-.half-page img{
+.half-page img,
+.painel .textbox{
   width: 100%;
 }
 .half-page{
@@ -12,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #BFBFBF;
 }
 .half-page img{
   min-height: 100%;
@@ -20,26 +22,79 @@
   filter:brightness(40%);
 }
 .project{
-  padding: 17px 10%;
   box-sizing: border-box;
   min-height: 50%;
+  background: #DFDFDF;
 }
+.content{
+  display: flex;
+}
+/* Painel */
 .painel{
-  width: 20%;
-  min-width: 300px;
-  background-color: #fff;
-  padding: 50px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  min-height: 60vh;
-  left: 5%;
+  width: 22%;
+  padding: 18px 26px;
+  box-sizing: border-box;
+  min-height: 70vh;
+  min-width: 200px;
+  left: 2%;
   top: 25%;
-  transition:  left 0.2s;
+  transition: left 0.2s;
+}
+.painel .textbox{
+}
+.painel p.paragraf{
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #B8B8B8;
+  text-align:justify-all;
+}
+.painel h1.title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+.painel h2.subtitle{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.painel h3.title{
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.painel .image{
+  width: 106px;
+  height: 106px;
+  background-color: gainsboro;
+  border-radius: 55px;
 }
 .project_images{
   width: 100%;
+  margin-left: 23%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 50px;
+}
+.project_images .image{
+  background-color: white;
+  width: 308px;
+  height: 212px;
+  margin: 10px 5px;
 }
 @media only screen and (max-width: 800px) {
   .half-page h1{

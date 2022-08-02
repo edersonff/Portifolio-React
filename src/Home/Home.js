@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Home.css';
 import commentsList from '../data/commentsList';
-import { Link } from 'react-router-dom'
 import {BsLinkedin, BsGithub, BsWhatsapp} from 'react-icons/bs'
 
 function App() {
