@@ -25,13 +25,15 @@
   min-height: 50%;
 }
 .painel{
-  width: 40%;
-  min-width: 400px;
+  width: 20%;
+  min-width: 300px;
   background-color: #fff;
+  padding: 50px;
   position: absolute;
   min-height: 60vh;
   left: 5%;
   top: 25%;
+  transition:  left 0.2s;
 }
 .project_images{
   width: 100%;
@@ -43,7 +45,7 @@
   .half-page h1{
     font-size: 65px;
   }
-  .project_images{
-    justify-content: center;
+  .painel{
+    left: 0;
   }
 }
