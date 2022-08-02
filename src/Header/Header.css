@@ -1,38 +1,142 @@
 
 header.navbar{
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    width: 100%;
-    height: 11%;
-    box-sizing: border-box;
-    position: fixed;
-   }
-   header .title{
-     color: var(--title);
-     font-size: 30px;
-     font-weight: 500;
-     letter-spacing: -0.055em;
-   }
-   header .links{
-     min-width: 40%;
-     justify-content: space-evenly;
-   }
-   header .links a{
-     font-weight: bold;
-     letter-spacing: -0.035em;
-     font-size: 20px;
-     margin: 0 3.5%;
-     padding: 0 1.5%;
-     color: var(--a)
-   }
-   header .menu-btn{
-     display: none;
-     width: 50px;
-     height: 50px;
-     background-image: url('/public/img/Icons/Menu.png');
-     background-size: cover;
-     cursor: pointer;
-     opacity: 0.7;
-   }
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  width: 100%;
+  height: 11%;
+  box-sizing: border-box;
+  position: absolute;
+  }
+header .title{
+  color: var(--title);
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+header .links{
+  min-width: 40%;
+  justify-content: space-evenly;
+}
+header .links a{
+  font-weight: bold;
+  letter-spacing: -0.035em;
+  font-size: 1.1em;
+  margin: 0 5%;
+  padding: 0 1.5%;
+  color: var(--a)
+}
+header .menu-btn{
+  display: none;
+  width: 45px;
+  height: 45px;
+  background-image: url('/public/img/Icons/Menu.png');
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0.5;
+}
+/* Selector */
+.links #selector{
+  width: 60px;
+  left: -60px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--main);
+  position: absolute;
+  transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), left 0.4s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.1s;
+  opacity: 0;
+}
+.links:hover #selector{
+  opacity: 1;
+}
+
+/* Lateral-Menu */
+.fullscreen{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.373);
+  z-index: 10;
+}
+.side-menu,
+.buttons{
+  border-radius: 0 20px 0 20px;
+}
+.side-menu{
+  width: 40%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(241, 241, 241);
+  left: 0;
+  top: 0;
+  padding-right: 2%;
+  z-index: 11;
+  transition: left 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.side-menu .buttons{
+  height: 100%;
+  background-color: #ffffff;
+  padding: 5% 10%;
+  box-sizing: border-box;
+}
+.side-menu .image_container{
+  width: 100%;
+  margin-bottom: 20%;
+}
+.side-menu .image_container img{
+  height: 70px;
+  width: 70px;
+  border-radius: 1em;
+  background-color: rebeccapurple;
+}
+.side-menu h1{
+  margin: 7% 0;
+  font-size: 1em;
+  color: rgb(255, 191, 122);
+  font-weight: 500;
+  padding: 0 5%;  
+}
+.side-menu .buttons a{
+  font-weight: 500;
+  width: 100%;
+  height: 40px;
+  font-size: 1.1em;
+  margin: 0.2em 0;
+  padding: 0 10px;
+  min-width: auto;
+  letter-spacing: -1px;
+  box-sizing:border-box;
+}
+.side-menu .buttons svg{
+  margin-right: 5%;
+  width: 20px;
+  height: 20px;
+}
+.side-menu.hide{
+  left: calc( -62% );
+}
+.side-menu.show{
+  left: 0;
+}
+.fullscreen.show{
+  opacity: 1;
+  pointer-events:all;
+  transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.fullscreen.hide{
+  opacity: 0;
+  pointer-events: none;
+}
+.side-menu .btn-side{
+  border-radius: 0.5em;
+  transition: 0.25s background-color;
+  color: rgb(255, 154, 45);
+}
+.side-menu .btn-side:hover{
+  background-color: rgb(255, 244, 232);
+}
+.side-menu .group_buttons{
+  margin-bottom: 20%;
+}

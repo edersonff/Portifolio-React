@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Home.css';
 import commentsList from '../data/commentsList';
+import { Link } from 'react-router-dom'
 import {BsLinkedin, BsGithub, BsWhatsapp} from 'react-icons/bs'
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
     <div className="App">
       <div className="image-layout flex align">
         <div className="apresentation text">
-          <h1>Oi, sou um <div className="dev">DEV </div><div className="dev"><div style={{display:'inline', fontSize: '42px'}}>{comment} {bar == "|" ? bar : (<>&nbsp;</>)}</div></div></h1>
+          <h1>Oi, sou um <div className="dev">DEV </div><div className="dev break"><div style={{fontSize: '0.7em'}}>{comment} {bar == "|" ? bar : (<>&nbsp;</>)}</div></div></h1>
           <p>Meu nome é Ederson e sou um desenvolvedor! Ederson nome é Meu, e um desenvolvedor sou!</p>
           <div className="btns flex">
             <button className="btn fill">Mais sobre</button>
@@ -55,9 +56,15 @@ function App() {
       </div>
 
       <div className="icons flex align">
-        <BsLinkedin />
-        <BsGithub />
-        <BsWhatsapp />
+        <a target="__blank" href="https://br.linkedin.com/in/ederson-franzen-fagundes/">
+          <BsLinkedin />
+        </a>
+        <a target="__blank" href="https://github.com/edersonff">
+          <BsGithub />
+        </a>
+        <a target="__blank" href="https://br.linkedin.com/in/ederson-franzen-fagundes/">
+          <BsWhatsapp />
+        </a>
       </div>
       <div className="eff-rectangle"/>
     </div>

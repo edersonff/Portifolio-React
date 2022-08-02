@@ -9,6 +9,7 @@ import {
 import Home from './Home/Home';
 import Error from './Error/Error';
 import Header from './Header/Header';
+import Projects from './Projects/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
     <Header />
     <Routes>
       <Route path='/' element={<Home />}/>
+      <Route path='/projetos' element={<Projects />}/>
       <Route path='*' element={<Error />}/>
     </Routes>
   </Router>

@@ -24,7 +24,7 @@ body{
 }
 .apresentation.text h1{
   font-weight: 700;
-  font-size: 64px;
+  font-size: 3.2em;
   line-height: 77px;
   letter-spacing: -0.07em;
 }
@@ -33,9 +33,12 @@ body{
   font-weight: 500;
   position: relative;
 }
+.apresentation.text h1 .dev div{
+  display: inline;
+}
 .apresentation.text h1 .dev:first-child::before{
   content: '';
-  width: 120px;
+  width: 95%;
   transform: rotate(-15deg);
   top: 0;
   bottom: 0;
@@ -47,7 +50,7 @@ body{
 }
 .apresentation.text p{
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.5em;
   line-height: 34px;
   letter-spacing: -0.07em;
   color: #939393;
@@ -120,6 +123,9 @@ body{
     width: 100%;
     margin: 10px auto;
   }
+  .break{
+    display: block!important;
+  }
 }
 /* Animations */
 @keyframes increaseWidth{
@@ -130,7 +136,7 @@ body{
   }
   100%{
     top: 0;
-    width: 120px;
+    width: 95%;
     transform: translate(-15deg);
   }
 }

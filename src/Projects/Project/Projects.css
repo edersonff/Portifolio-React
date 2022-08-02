@@ -1,0 +1,67 @@
+/* full_page */
+.projects,
+.half-page,
+.half-page img{
+  width: 100%;
+}
+.half-page{
+  height: 50%;
+  z-index: -1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.half-page img{
+  min-height: 100%;
+  position: absolute;
+  z-index: -2;
+  filter:brightness(40%);
+}
+.half-page h1{
+  font-weight: 200;
+  font-size: 96px;
+  letter-spacing: 0.085em;
+  color: #fff;
+}
+.projects{
+  padding: 17px 10%;
+  box-sizing: border-box;
+  min-height: 50%;
+}
+.projects .filters{
+  width: fit-content;
+  height: 45px;
+  background-color: white;
+  border: 1px solid #DADADA;
+  margin: 17px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.projects .filters .filter{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+  height: 100%;
+  width: 140px;
+  border-right: 1px solid #E6E6E6;
+  cursor: pointer;
+  user-select: none;
+}
+.projects_menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 800px) {
+  .half-page h1{
+    font-size: 65px;
+  }
+  .projects_menu{
+    justify-content: center;
+  }
+}

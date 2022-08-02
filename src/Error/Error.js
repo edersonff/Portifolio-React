@@ -6,8 +6,8 @@ function Error(props) {
     return (
         <div className='center-container flex align'>
             <div className="center flex align">
-                <h1>O link foi extraviado 📬</h1>
-                <Link to="/" className="btn fill">Voltar pro incio</Link>
+                <h1>Não encontrado :(</h1>
+                <Link to="/" className="btn fill flex align">Voltar pro incio</Link>
             </div>
         </div>
     );

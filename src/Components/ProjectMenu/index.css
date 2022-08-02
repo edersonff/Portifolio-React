@@ -1,0 +1,18 @@
+.Project_menu_container{
+    background-color: ghostwhite;
+    width: 257px;
+    margin: 17px;
+    border: 1px #BBBBBB solid;
+}
+.project_menu_image{
+    height: 257px;
+}
+.Project_menu_container .project_name{
+    font-weight: 300;
+    padding: 0 17px;
+    font-size: 20px;
+}
+.Project_menu_container img{
+    width: 100%;
+    min-height: 100%;
+}

@@ -9,8 +9,11 @@
     min-height: 30%;
     font-size: 1em;
     padding: 2em;
-    background-color: rgb(249, 249, 249);
-    border: 5px solid rgb(236, 236, 236);
     justify-content: space-evenly;
     flex-direction: column;
+    text-align: center;
+}
+.center-container .btn{
+    justify-content: center;
+    box-sizing: border-box;
 }
