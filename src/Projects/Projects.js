@@ -17,9 +17,9 @@ function Projects() {
             <div className="filter">Todos</div>
           </div>
           <div className="projects_menu">
-            {projectsList.map((project)=>{
+            {projectsList.map((project, i)=>{
               return (
-                <ProjectMenu title={project.title}/>
+                <ProjectMenu key={i} id={i+1} title={project.title}/>
               )
             })}
           </div>

@@ -50,14 +50,14 @@ function Header() {
             <header className="navbar">
                 <div style={{ filter: functions.checkPage('projetos') ? 'invert()' : '' }} className="menu-btn" onClick={()=>setSideMenu(!sideMenu)}/>
                 <div className="title" style={{color: functions.checkPageWhite("projetos")}}>
-                Ederson Franzen Fagundes
+                    Ederson Franzen Fagundes
                 </div>
                 <div className="links flex align">
-                <Link style={{color: functions.checkPageWhite("projetos")}} onMouseOver={functions.mouseOverLinks} to='/'>Home</Link>
-                <Link style={{color: functions.checkPageWhite("projetos")}} onMouseOver={functions.mouseOverLinks} to='/projetos'>Projetos</Link>
-                <Link style={{color: functions.checkPageWhite("projetos")}} onMouseOver={functions.mouseOverLinks} to='/sobre'>Sobre</Link>
-                <Link style={{color: functions.checkPageWhite("projetos")}} onMouseOver={functions.mouseOverLinks} to='/contato'>Contato</Link>
-                <div id="selector" style={{left: menuPos[0], top: menuPos[1]+33, width: menuPos[2]}}/>
+                    <Link style={{color: functions.checkPageWhite("projetos")}} onMouseOver={functions.mouseOverLinks} to='/'>Home</Link>
+                    <Link style={{color: functions.checkPageWhite("projetos")}} onMouseOver={functions.mouseOverLinks} to='/projetos'>Projetos</Link>
+                    <Link style={{color: functions.checkPageWhite("projetos")}} onMouseOver={functions.mouseOverLinks} to='/sobre'>Sobre</Link>
+                    <Link style={{color: functions.checkPageWhite("projetos")}} onMouseOver={functions.mouseOverLinks} to='/contato'>Contato</Link>
+                    <div id="selector" style={{left: menuPos[0], top: menuPos[1]+33, width: menuPos[2]}}/>
                 </div>
             </header>
             <div className={"fullscreen "+(sideMenu ? ('show') : ('hide'))} onClick={()=>setSideMenu(!sideMenu)}/>
