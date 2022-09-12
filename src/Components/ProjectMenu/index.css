@@ -1,16 +1,19 @@
 .Project_menu_container{
     background-color: ghostwhite;
-    width: 257px;
+    width: 207px;
     margin: 17px 5px;
     border: 1px #BBBBBB solid;
 }
 .project_menu_image{
-    height: 257px;
+    height: 207px;
 }
 .Project_menu_container .project_name{
     font-weight: 300;
-    padding: 0 17px;
-    font-size: 20px;
+    padding: 0 15px;
+    font-size: 13px;
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 .Project_menu_container img{
     width: 100%;

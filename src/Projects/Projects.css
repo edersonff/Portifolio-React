@@ -22,7 +22,6 @@
 .half-page h1{
   font-weight: 200;
   font-size: 96px;
-  letter-spacing: 0.085em;
   color: #fff;
 }
 .projects{
@@ -43,10 +42,10 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   height: 100%;
-  width: 140px;
+  width: 110px;
   border-right: 1px solid #E6E6E6;
   cursor: pointer;
   user-select: none;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom'
 import {AiOutlineProject, AiOutlineHome} from 'react-icons/ai'
@@ -19,9 +19,6 @@ function Header() {
     
     const location = useLocation();
 
-    useEffect(() => {
-        console.log('Location changed');
-    }, [location]);
     return (
         <>
             <div className={"side-menu "+(sideMenu ? ('show') : ('hide'))}>
@@ -31,7 +28,7 @@ function Header() {
                 </div>
                     <div className="group_buttons">
                         <h1>Menus</h1>
-                        <Link className={'flex align btn-side '+(location.pathname == "/" ? 'empty' : 'fill') } to='/'><AiOutlineHome/> Home</Link>
+                        <Link className={'flex align btn-side '+(location.pathname === "/" ? 'empty' : 'fill') } to='/'><AiOutlineHome/> Home</Link>
                         <Link className={'flex align btn-side '+(functions.checkPageFill("projetos")) } to='/projetos'><AiOutlineProject/> Projetos</Link>
                         <Link className={'flex align btn-side '+(functions.checkPageFill("sobre")) } to='/sobre'><IoChatboxEllipsesOutline /> Sobre</Link>
                         <Link className={'flex align btn-side '+(functions.checkPageFill("contato")) } to='/contato'><MdOutlineContacts /> Contato</Link>
@@ -39,7 +36,7 @@ function Header() {
                     
                     <div className="group_buttons">
                         <h1>Projetos</h1>
-                        <Link className={'flex align btn-side '+(location.pathname == "/" ? 'empty' : 'fill') } to='/'><AiOutlineHome/> Back-end</Link>
+                        <Link className={'flex align btn-side '+(location.pathname === "/" ? 'empty' : 'fill') } to='/'><AiOutlineHome/> Back-end</Link>
                         <Link className={'flex align btn-side '+(functions.checkPageFill("projetos")) } to='/projetos'><AiOutlineProject/> Mobile</Link>
                         <Link className={'flex align btn-side '+(functions.checkPageFill("sobre")) } to='/sobre'><IoChatboxEllipsesOutline /> Front-end</Link>
                         <Link className={'flex align btn-side '+(functions.checkPageFill("contato")) } to='/contato'><MdOutlineContacts /> Outros</Link>

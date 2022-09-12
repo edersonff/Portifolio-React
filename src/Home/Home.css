@@ -24,9 +24,7 @@ body{
 }
 .apresentation.text h1{
   font-weight: 700;
-  font-size: 3.2em;
-  line-height: 77px;
-  letter-spacing: -0.07em;
+  font-size: 2.75em;
 }
 .apresentation.text h1 .dev{
   font-family: 'Inika', serif;
@@ -50,10 +48,9 @@ body{
 }
 .apresentation.text p{
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.1em;
   line-height: 34px;
-  letter-spacing: -0.07em;
-  color: #939393;
+  color: #d5d5d5;
 }
 .apresentation.image img{
   width: 430px;
@@ -119,7 +116,6 @@ body{
     bottom: 5%;
   }
   .btn{
-    padding: 0;
     width: 100%;
     margin: 10px auto;
   }
